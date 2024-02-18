@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +29,7 @@
     }
     .menu-button {
       cursor: pointer;
-      font-size: 70px;
+      font-size: 40px; /* Adjust the font size as needed */
       background-color: transparent;
       color: #97837A;
       margin-left: auto;
@@ -73,15 +72,15 @@
     }
     .map-image {
       width: 50%; /* Adjust the width as needed */
-      margin-top: 20px; /* Adjust the margin-top as needed */
-      margin-left: 100px;
+      margin-top: -150px; /* Adjust the margin-top as needed */
+      margin-left: 500px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="Kas Design logo.png" alt="Logo">
+    <img class="logo" src="Kas%20design%20logo.png" alt="Kas design Logo">
     <div class="button-container">
       <button>My work</button>
       <div class="separator"></div>
