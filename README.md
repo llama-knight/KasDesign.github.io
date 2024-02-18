@@ -1,5 +1,6 @@
 # KasDesign.github.io
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -64,6 +65,9 @@
       height: 5px;
       background-color: #97837A;
     }
+    .textbox-image, .map-image {
+      background-color: transparent;
+    }
     .textbox-image {
       width: 40%; /* Adjust the width as needed */
       margin-top: 20px; /* Adjust the margin-top as needed */
@@ -71,7 +75,7 @@
     .map-image {
       width: 50%; /* Adjust the width as needed */
       margin-top: 20px; /* Adjust the margin-top as needed */
-	  margin-left: 100px;
+      margin-left: 100px;
     }
   </style>
 </head>
@@ -93,10 +97,10 @@
   </header>
 
   <!-- Add the textbox image above the map image -->
-  <img class="textbox-image" src="Text-Where Ideas, become a reality.png" alt="Textbox Image">
+  <img class="textbox-image" src="Text-Where Ideas, become a reality.png" alt="Textbox Image" style="background-color: transparent;">
 
   <!-- Add the map image under the textbox image -->
-  <img class="map-image" src="Global design.png" alt="Map Image">
+  <img class="map-image" src="Global design.png" alt="Map Image" style="background-color: transparent;">
 
   <!-- More content or footer goes here -->
 </body>
