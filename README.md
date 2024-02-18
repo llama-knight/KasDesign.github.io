@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
     }
     .menu-button {
       cursor: pointer;
-      font-size: 40px; /* Adjust the font size as needed */
+      font-size: 70px;
       background-color: transparent;
       color: #97837A;
       margin-left: auto;
@@ -80,7 +81,8 @@
 
 <body>
   <header>
-    <img class="logo" src="Kas%20design%20logo.png" alt="Kas design Logo">
+ <img class="logo" src="Kas%20design%20logo.png" alt="Kas design Logo" 
+ style="background-color: transparent;">
     <div class="button-container">
       <button>My work</button>
       <div class="separator"></div>
