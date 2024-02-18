@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Kas Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       background-color: #f5deb3;
@@ -81,8 +82,7 @@
 
 <body>
   <header>
- <img class="logo" src="Kas%20design%20logo.png" alt="Kas design Logo" 
- style="background-color: transparent;">
+    <img class="logo" src="Kas%20design%20logo.png" alt="Kas design Logo" style="background-color: transparent;">
     <div class="button-container">
       <button>My work</button>
       <div class="separator"></div>
