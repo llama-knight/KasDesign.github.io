@@ -6,13 +6,14 @@
   <style>
     body {
       background-color: #f5deb3;
-      padding-left: 20px;
+      padding: 20px;
+      margin: 0;
     }
     .separator {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: -5px;
+      margin-top: 10px;
     }
     .separator::before {
       content: "\2605";
@@ -29,48 +30,55 @@
     }
     .menu-button {
       cursor: pointer;
-      font-size: 70px;
+      font-size: 40px;
       background-color: transparent;
       color: #97837A;
-      margin-left: auto;
-      margin-top: -10px;
-      padding: 20px 60px;
+      padding: 10px;
       border-radius: 20px;
     }
     .button-container {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      margin-left: 300px;
     }
     .button-container button {
       background-color: #97837A;
       color: #f5deb3;
       border: none;
-      padding: 25px 70px;
-      margin: 0 30px;
+      padding: 15px 30px;
+      margin: 0 10px;
       border-radius: 25px;
-      font-size: 25px;
+      font-size: 20px;
+      max-width: 100%;
+      height: auto;
     }
     .logo {
-      /* margin-right: auto; */
+      max-width: 100%;
     }
     .line {
       position: absolute;
-      bottom: -5px;
+      bottom: 0;
       left: 0;
       width: 100%;
       height: 5px;
       background-color: #97837A;
     }
-    .textbox-image {
-      width: 40%; /* Adjust the width as needed */
-      margin-top: 20px; /* Adjust the margin-top as needed */
+    .textbox-image, .map-image {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
     }
-    .map-image {
-      width: 50%; /* Adjust the width as needed */
-      margin-top: 20px; /* Adjust the margin-top as needed */
-	  margin-left: 100px;
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .menu-button {
+        font-size: 30px;
+        padding: 8px 20px;
+      }
+      .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -78,23 +86,23 @@
 <body>
   <header>
     <img class="logo" src="Kas Design logo.png" alt="Logo">
-    <div class="button-container">
-      <button>My work</button>
-      <div class="separator"></div>
-      <button>About me</button>
-      <div class="separator"></div>
-      <button>Contact</button>
-      <div class="separator"></div>
-      <button>Socials</button>
-    </div>
     <div class="menu-button">&#9776;</div>
     <div class="line"></div>
   </header>
 
-  <!-- Add the textbox image above the map image -->
+  <div class="separator"></div>
+
+  <div class="button-container">
+    <button>My work</button>
+    <button>About me</button>
+    <button>Contact</button>
+    <button>Socials</button>
+  </div>
+
+  <!-- Add the textbox image -->
   <img class="textbox-image" src="Text-Where Ideas, become a reality.png" alt="Textbox Image">
 
-  <!-- Add the map image under the textbox image -->
+  <!-- Add the map image -->
   <img class="map-image" src="Global design.png" alt="Map Image">
 
   <!-- More content or footer goes here -->
