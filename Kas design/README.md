@@ -9,24 +9,11 @@
       padding: 20px;
       margin: 0;
     }
-    .separator {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .separator::before {
-      content: "\2605";
-      color: #97837A;
-      font-size: 40px;
-      margin-right: 10px;
-    }
     header {
-      padding: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: relative;
+      padding: 10px;
     }
     .menu-button {
       cursor: pointer;
@@ -39,7 +26,8 @@
     .button-container {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: space-between;
+      padding: 10px;
     }
     .button-container button {
       background-color: #97837A;
@@ -49,36 +37,22 @@
       margin: 0 10px;
       border-radius: 25px;
       font-size: 20px;
-      max-width: 100%;
-      height: auto;
     }
     .logo {
-      max-width: 100%;
+      max-width: 200px;
     }
     .line {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
       height: 5px;
       background-color: #97837A;
     }
-    .textbox-image, .map-image {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
     }
-
-    /* Responsive styles */
-    @media screen and (max-width: 768px) {
-      .menu-button {
-        font-size: 30px;
-        padding: 8px 20px;
-      }
-      .button-container button {
-        padding: 10px 20px;
-        font-size: 16px;
-      }
+    .image-container img {
+      width: 100%;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -87,10 +61,7 @@
   <header>
     <img class="logo" src="Kas Design logo.png" alt="Logo">
     <div class="menu-button">&#9776;</div>
-    <div class="line"></div>
   </header>
-
-  <div class="separator"></div>
 
   <div class="button-container">
     <button>My work</button>
@@ -99,11 +70,14 @@
     <button>Socials</button>
   </div>
 
-  <!-- Add the textbox image -->
-  <img class="textbox-image" src="Text-Where Ideas, become a reality.png" alt="Textbox Image">
+  <div class="line"></div>
 
-  <!-- Add the map image -->
-  <img class="map-image" src="Global design.png" alt="Map Image">
+  <div class="image-container">
+    <!-- Add the textbox image -->
+    <img src="Text-Where Ideas, become a reality.png" alt="Textbox Image">
+    <!-- Add the map image -->
+    <img src="Global design.png" alt="Map Image">
+  </div>
 
   <!-- More content or footer goes here -->
 </body>
